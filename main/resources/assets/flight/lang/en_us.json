@@ -1,0 +1,14 @@
+{
+  "item.minecraft.tipped_arrow.effect.extended_potion_of_flight": "Arrow of Flight",
+  "item.minecraft.lingering_potion.effect.extended_potion_of_flight": "Lingering Potion of Flight",
+  "effect.flight.flight": "Flight",
+  "item.flight.mystical_powder": "Mystical Powder",
+  "block.flight.mystical_ore": "Mystical Ore",
+  "item.minecraft.potion.effect.extended_potion_of_flight": "Potion of Flight",
+  "item.flight.mystical_dust": "Mystical Dust",
+  "item.minecraft.potion.effect.potion_of_flight": "Potion of Flight",
+  "item.minecraft.lingering_potion.effect.potion_of_flight": "Lingering Potion of Flight",
+  "item.minecraft.splash_potion.effect.potion_of_flight": "Splash Potion of Flight",
+  "item.minecraft.tipped_arrow.effect.potion_of_flight": "Arrow of Flight",
+  "item.minecraft.splash_potion.effect.extended_potion_of_flight": "Splash Potion of Flight"
+}
