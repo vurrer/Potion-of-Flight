@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "flight:mystical_dust"
+    },
+    "1": {
+      "item": "flight:mystical_dust"
+    },
+    "2": {
+      "item": "flight:mystical_dust"
+    },
+    "3": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "4": {
+      "item": "minecraft:ghast_tear"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "6": {
+      "item": "flight:mystical_dust"
+    },
+    "7": {
+      "item": "flight:mystical_dust"
+    },
+    "8": {
+      "item": "flight:mystical_dust"
+    }
+  },
+  "result": {
+    "item": "flight:mystical_powder",
+    "count": 1
+  }
+}
