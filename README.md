@@ -1,6 +1,7 @@
 # Potion Of Flight
 
 ## https://www.curseforge.com/minecraft/mc-mods/potion-of-flying
+## https://modrinth.com/mod/potion-of-flight
 
 [FORGE]
 
