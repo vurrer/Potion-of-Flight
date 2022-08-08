@@ -3,7 +3,7 @@
 ## https://www.curseforge.com/minecraft/mc-mods/potion-of-flying
 ## https://modrinth.com/mod/potion-of-flight
 
-[FORGE]
+[FORGE] [FABRIC IN PROGRESS]
 
 [1.16.5, 1.18.2]
 
