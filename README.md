@@ -5,7 +5,7 @@
 
 [FORGE] [FABRIC 90% FINISHED]
 
-[1.16.5, 1.18.2]
+[1.16.5, 1.17.1, 1.18.2]
 
 Feel free to use this in a modpack, just give credit if you do.
 
