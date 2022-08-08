@@ -54,7 +54,7 @@ New Ore:
 
 - Mystical Ore
 
-Generates Naturally from Y=-10 to Y=-63 (Y=5 to Y=20 on 1.16.5)
+Generates Naturally from Y=-10 to Y=-63 (Y=5 to Y=20 on 1.17.1 & 1.16.5)
 
 Use an Iron Pickaxe (or above) to mine it
 
