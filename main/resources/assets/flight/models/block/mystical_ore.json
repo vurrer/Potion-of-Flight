@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "flight:blocks/index",
-    "up": "flight:blocks/index",
-    "north": "flight:blocks/index",
-    "east": "flight:blocks/index",
-    "south": "flight:blocks/index",
-    "west": "flight:blocks/index",
-    "particle": "flight:blocks/index"
+    "down": "flight:blocks/mystical_ore_stone",
+    "up": "flight:blocks/mystical_ore_stone",
+    "north": "flight:blocks/mystical_ore_stone",
+    "east": "flight:blocks/mystical_ore_stone",
+    "south": "flight:blocks/mystical_ore_stone",
+    "west": "flight:blocks/mystical_ore_stone",
+    "particle": "flight:blocks/mystical_ore_stone"
   }
 }

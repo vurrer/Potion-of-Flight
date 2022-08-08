@@ -32,13 +32,13 @@ public class FlightProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(FlightModMobEffects.FLIGHT.get()) : false) {
+		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(FlightModMobEffects.FLIGHT) : false) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().mayfly = (true);
 				_player.onUpdateAbilities();
 			}
 		}
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(FlightModMobEffects.FLIGHT.get()) : false)) {
+		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(FlightModMobEffects.FLIGHT) : false)) {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().mayfly = (false);
 				_player.onUpdateAbilities();

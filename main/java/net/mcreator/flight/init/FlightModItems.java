@@ -4,9 +4,9 @@
  */
 package net.mcreator.flight.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -15,15 +15,28 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.flight.item.MysticalPowderItem;
 import net.mcreator.flight.item.MysticalDustItem;
-import net.mcreator.flight.FlightMod;
 
+import java.util.List;
+import java.util.ArrayList;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FlightModItems {
-	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, FlightMod.MODID);
-	public static final RegistryObject<Item> MYSTICAL_ORE = block(FlightModBlocks.MYSTICAL_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
-	public static final RegistryObject<Item> MYSTICAL_DUST = REGISTRY.register("mystical_dust", () -> new MysticalDustItem());
-	public static final RegistryObject<Item> MYSTICAL_POWDER = REGISTRY.register("mystical_powder", () -> new MysticalPowderItem());
+	private static final List<Item> REGISTRY = new ArrayList<>();
+	public static final Item MYSTICAL_DUST = register(new MysticalDustItem());
+	public static final Item MYSTICAL_POWDER = register(new MysticalPowderItem());
+	public static final Item MYSTICAL_ORE = register(FlightModBlocks.MYSTICAL_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
-		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+	private static Item register(Item item) {
+		REGISTRY.add(item);
+		return item;
+	}
+
+	private static Item register(Block block, CreativeModeTab tab) {
+		return register(new BlockItem(block, new Item.Properties().tab(tab)).setRegistryName(block.getRegistryName()));
+	}
+
+	@SubscribeEvent
+	public static void registerItems(RegistryEvent.Register<Item> event) {
+		event.getRegistry().registerAll(REGISTRY.toArray(new Item[0]));
 	}
 }

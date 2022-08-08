@@ -19,6 +19,7 @@ import java.util.Collections;
 public class MysticalOreBlock extends Block {
 	public MysticalOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(9f, 6f));
+		setRegistryName("mystical_ore");
 	}
 
 	@Override
@@ -31,6 +32,6 @@ public class MysticalOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(FlightModItems.MYSTICAL_DUST.get()));
+		return Collections.singletonList(new ItemStack(FlightModItems.MYSTICAL_DUST));
 	}
 }

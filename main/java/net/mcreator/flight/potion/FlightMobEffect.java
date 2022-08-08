@@ -7,6 +7,7 @@ import net.minecraft.world.effect.MobEffect;
 public class FlightMobEffect extends MobEffect {
 	public FlightMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -1187227);
+		setRegistryName("flight");
 	}
 
 	@Override

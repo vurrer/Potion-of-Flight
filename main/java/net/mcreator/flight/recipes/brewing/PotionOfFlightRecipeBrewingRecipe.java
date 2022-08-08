@@ -32,13 +32,13 @@ public class PotionOfFlightRecipeBrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return ingredient.getItem() == FlightModItems.MYSTICAL_POWDER.get();
+		return ingredient.getItem() == FlightModItems.MYSTICAL_POWDER;
 	}
 
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(input.getItem()), FlightModPotions.POTION_OF_FLIGHT.get());
+			return PotionUtils.setPotion(new ItemStack(input.getItem()), FlightModPotions.POTION_OF_FLIGHT);
 		}
 		return ItemStack.EMPTY;
 	}

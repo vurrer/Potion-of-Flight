@@ -25,7 +25,7 @@ public class ExtendedPotionRecipeBrewingRecipe implements IBrewingRecipe {
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
 		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION)
-				&& PotionUtils.getPotion(input) == FlightModPotions.POTION_OF_FLIGHT.get();
+				&& PotionUtils.getPotion(input) == FlightModPotions.POTION_OF_FLIGHT;
 	}
 
 	@Override
@@ -36,7 +36,7 @@ public class ExtendedPotionRecipeBrewingRecipe implements IBrewingRecipe {
 	@Override
 	public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
 		if (isInput(input) && isIngredient(ingredient)) {
-			return PotionUtils.setPotion(new ItemStack(input.getItem()), FlightModPotions.EXTENDED_POTION_OF_FLIGHT.get());
+			return PotionUtils.setPotion(new ItemStack(input.getItem()), FlightModPotions.EXTENDED_POTION_OF_FLIGHT);
 		}
 		return ItemStack.EMPTY;
 	}
